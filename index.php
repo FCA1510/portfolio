@@ -1,3 +1,8 @@
+<?php
+$pg = "inicio";
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -18,39 +23,13 @@
 
 <body id="inicio">
     <header class="container">
-        <nav class="navbar navbar-expand-md mb-4">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobre-mi.html">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <div class="d-line">
-                        <a href class="btn btn-rojo">Descargar mi CV<i class="fas fa-download"></i></a>
+        <?php include_once("menu.php"); ?>
 
-                    </div>
-                </div>
-            </div>
-        </nav>
     </header>
     <main class="container">
         <div class="row">
             <div class="col-12 mx-auto text-center cohete">
-               <a href="proyectos.html"><img src="images/cohete.svg" alt=""></a>
+               <a href="proyectos.php"><img src="images/cohete.svg" alt=""></a>
             </div>
             <div class="col-12 col-sm-6 offset-sm-3 text-center">
                 <div class="my-4">
@@ -58,7 +37,7 @@
                 </div>
             </div>
             <div class="col-12 text-center pt-3 pb-5">
-                <a href="proyectos.html" class="btn shadow">Conoce mis proyectos</a>
+                <a href="proyectos.php" class="btn shadow">Conoce mis proyectos</a>
             </div>
         </div>
 
